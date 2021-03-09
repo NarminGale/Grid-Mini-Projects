@@ -72,9 +72,6 @@ li {
   background: var(--darkPurple);
   padding: 0 2rem;
 }
-.main-nav li:hover {
-  background: var(--mainBlack);
-}
 .main-nav a {
   text-transform: capitalize;
   display: block;
@@ -85,6 +82,8 @@ li {
 }
 .main-nav a:hover {
   color: var(--White);
+  background: var(--mainBlack);
+  transition: var(--mainTransition);
 }
 
 @media screen and (max-width: 992px) {
