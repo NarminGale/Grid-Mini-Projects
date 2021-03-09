@@ -45,7 +45,7 @@ h2 {
   margin-bottom: 0;
 }
 p {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.7rem;
   line-height: 2;
 }
@@ -100,5 +100,30 @@ li {
   }
   .main-nav a {
     text-align: center;
+  }
+}
+
+/* === Hero === */
+.hero-header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(18, 65, 14, 0.75), rgba(0, 0, 0, 0.75)),
+    url('./images/hero.jpeg') center/cover fixed no-repeat;
+  color: var(--mainWhite);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.hero-banner {
+  text-align: center;
+}
+.hero-banner p {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+@media screen and (max-width: 576px) {
+  .hero-banner {
+    padding: 0 1rem;
   }
 }
