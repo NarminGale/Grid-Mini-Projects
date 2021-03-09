@@ -144,6 +144,10 @@ li {
   border: 1px solid var(--mainBlack);
   margin-bottom: 3rem;
 }
+.card img {
+  height: 13.44rem;
+  object-fit: cover;
+}
 .card-info {
   padding: 1rem;
 }
@@ -160,4 +164,17 @@ li {
 }
 .card-footer span:hover {
   color: var(--White);
+}
+@media screen and (min-width: 768px) {
+  .cards-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cards-center {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+  }
 }
