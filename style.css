@@ -6,7 +6,7 @@
   --mainBlack: #232e21;
   --mainWhite: #f4ecd6;
   --darkPurple: #310a31;
-  --offWhite: #f7f7f7;
+  --White: #fff;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 0.2rem;
 }
@@ -49,6 +49,9 @@ p {
   font-size: 0.7rem;
   line-height: 2;
 }
+li {
+  list-style: none;
+}
 /* button */
 .btn {
   display: inline-block;
@@ -62,4 +65,41 @@ p {
 .btn:hover {
   background: var(--darkPurple);
   color: var(--mainWhite);
+}
+
+/* === Main Navbar === */
+.main-nav {
+  background: var(--darkPurple);
+  padding: 0 2rem;
+}
+.main-nav li:hover {
+  background: var(--mainBlack);
+}
+.main-nav a {
+  text-transform: capitalize;
+  display: block;
+  padding: 1rem 0;
+  color: var(--mainWhite);
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+}
+.main-nav a:hover {
+  color: var(--White);
+}
+
+@media screen and (max-width: 992px) {
+  .main-nav a:hover {
+    padding-left: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-nav ul {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main-nav a {
+    text-align: center;
+  }
 }
