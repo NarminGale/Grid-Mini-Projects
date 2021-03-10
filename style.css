@@ -181,6 +181,12 @@ li {
   }
 } */
 
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
 /* === big screen with minmax, autofill, autofit === */
 .cards-center {
   display: grid;
