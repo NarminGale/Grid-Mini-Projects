@@ -165,7 +165,9 @@ li {
 .card-footer span:hover {
   color: var(--White);
 }
-@media screen and (min-width: 768px) {
+
+/* === big screen with media queries === */
+/* @media screen and (min-width: 768px) {
   .cards-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -177,4 +179,12 @@ li {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2rem;
   }
+} */
+
+/* === big screen with minmax, autofill, autofit === */
+.cards-center {
+  display: grid;
+  grid-column-gap: 2rem;
+  /* grid-template-columns: repeat(auto-fill, minmax(368px, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(268.5px, 1fr));
 }
